@@ -117,7 +117,7 @@ img {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19; /* identical to box height */
-  color: #212121;
+  color: var(--back-color);
 }
 
 .header-mail {
