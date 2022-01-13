@@ -1,4 +1,4 @@
-body {
+.body {
   font-family: "Roboto", sans-serif;
   color: var(--back-color);
   background-color: var(--base-back-color);
@@ -102,7 +102,6 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--back-color);
 }
 
 .header-logo {
@@ -218,6 +217,10 @@ img {
 
 .menu-link:not(:last-child) {
   margin-right: 8px;
+}
+
+.menu-btn {
+  border-color: var(--menu-team-color);
 }
 
 .menu-btn:hover,
