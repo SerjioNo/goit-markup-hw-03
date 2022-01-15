@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: "Roboto", sans-serif;
   color: var(--back-color);
   background-color: var(--base-back-color);
@@ -65,6 +65,13 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*--------- HEADER -------- */
@@ -73,6 +80,7 @@ img {
   background-color: var(--base-back-color);
   padding-top: 24px;
   padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 
 .container-header {
@@ -87,6 +95,7 @@ img {
 .header-list {
   display: flex;
   align-items: center;
+  color: var(--base-color);
 }
 
 .header-list-too {
@@ -181,14 +190,18 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87; /* identical to box height, or 187% */
+  width: 200px;
+  height: 50px;
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   background-color: var(--hover-color);
   color: var(--title-studio-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: navy;
 }
 
 .title-btn:hover,
@@ -201,8 +214,8 @@ img {
 .menu {
   display: flex;
   justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 56px;
+  padding-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .menu-btn {
@@ -213,14 +226,11 @@ img {
   background: var(--menu-team-color);
   border-radius: 4px;
   padding: 6px 22px;
+  border: navy;
 }
 
 .menu-link:not(:last-child) {
   margin-right: 8px;
-}
-
-.menu-btn {
-  border-color: var(--menu-team-color);
 }
 
 .menu-btn:hover,
@@ -234,21 +244,21 @@ img {
 
 /*-------PRIOR--------*/
 
-.prior {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .prior-list {
   display: flex;
   justify-content: center;
 }
 
 .prior-title-list {
+  font-style: normal;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.prior-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .prior-after-title {
@@ -259,18 +269,22 @@ img {
 /*--------WORK--------*/
 
 .work {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
-
 .work-list {
   display: flex;
   justify-content: center;
 }
 
-.work-list-img:not(:last-child) {
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 
+.work-item {
+  max-width: 100%;
+  height: auto;
+}
+}
 .work-title {
   font-weight: bold;
   font-size: 36px;
@@ -286,11 +300,15 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: var(--menu-team-color);
 }
 
+.team-item {
+  background: var(--title-studio-color); /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -314,27 +332,49 @@ img {
   line-height: 1.18; /* identical to box height */
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-after-title {
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.18; /* identical to box height */
   text-align: center;
   color: var(--contact-color);
+  letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
 
 /*------------BEDGE--------------*/
 
-.bedge-list:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
-}
-
 .bedge {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 94px;
+  padding-top: 0px;
+}
+
+.bedge-list {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.bedge-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.bedge-list:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.bedge-list:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
 }
 
 .bedge-title {
@@ -342,7 +382,7 @@ img {
   font-size: 18px;
   line-height: 2; /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  margin-top: 20px;
+  color: var(--base-color);
   margin-bottom: 4px;
 }
 
@@ -350,7 +390,6 @@ img {
   font-size: 16px;
   line-height: 1.87; /* identical to box height, or 187% */
   color: var(--contact-color);
-  margin-bottom: 20px;
 }
 
 /*------------FOOTER-------------*/
