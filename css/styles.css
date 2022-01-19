@@ -111,6 +111,7 @@ img {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--base-color);
 }
 
 .header-logo {
@@ -263,6 +264,7 @@ img {
 
 .prior-after-title {
   line-height: 1.71; /* or 171% */
+  width: 270px;
   color: var(--contact-color);
 }
 
@@ -358,7 +360,6 @@ img {
   width: 370px;
   height: 404px;
   background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 
@@ -367,6 +368,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+  border: 1px solid #eeeeee;
 }
 
 .bedge-list:not(:nth-child(3n + 3)) {
